@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe</title>
+    <!-- TailwindCSS and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#2A303C] text-white">
+    <!-- header open -->
+    <header class="md:px-10 px-2 text-center py-10">
+        <h1 class="text-white font-semibold md:text-5xl text-3xl mb-5">AI Universe Hub</h1>
+        <button id="sort" onclick="" class="btn w-[150px] py-2 text-white">Sort by Date<p class="text-xs capitalize">Ascending</p></button>
+    </header>
+    <!-- header closed -->
+
+
+    <!-- main open -->
+    <main class="md:mx-10 mx-5">
+
+        <!-- card container -->
+        <section id="card-container" class=" my-2 grid md:grid-cols-3 grid-cols-1 gap-10">
+            <!-- code from js -->
+        </section>
+        <!-- Loader -->
+        <div id="loader" class="flex h-[50vh] items-center justify-center hidden">
+            <div class="inline-block md:h-20 md:w-20 h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status"></div>
+        </div>
+        <!-- see more button -->
+        <section class="text-center">
+            <button onclick="seeMore()" id="see-more" class="my-2 btn w-[150px] hidden">See More</button>
+        </section>
+
+
+
+        <!-- Modal -->
+        <section>
+            <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+            <div class="modal ">
+                
+                <div id="modal-body" class="modal-box bg-[#2A303C] text-white w-full max-w-5xl">
+                    <!-- modal loader -->
+                    <div id="modal-loader" class="flex h-[50vh] items-center justify-center hidden">
+                        <div class="inline-block md:h-20 md:w-20 h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status"></div>
+                    </div>
+                    <!-- code from js -->
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <!-- main closed -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
